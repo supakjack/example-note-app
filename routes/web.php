@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoteController;
+use App\Http\Controllers\Auth\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +14,10 @@ use App\Http\Controllers\NoteController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/login',[LoginController::class, 'login']);
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
  
-Route::resource('notes', NoteController::class);
+// Route::resource('notes', NoteController::class);
